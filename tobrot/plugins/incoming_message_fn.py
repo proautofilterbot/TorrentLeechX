@@ -55,10 +55,10 @@ async def incoming_message_f(client, message):
     g_id = message.from_user.id
     u_men = message.from_user.mention
     credit = await message.reply_text(
-        f"<b><i>🛃 Working For 🛃:</i></b> {u_men}", parse_mode="html"
+        f"<b>📌 𝙒𝙊𝙍𝙆𝙄𝙉𝙂 𝙁𝙊𝙍 ✅ </b> {u_men}", parse_mode="html" 🚀
     )
     # get link from the incoming message
-    i_m_sefg = await message.reply_text("<code>Processing . . . 🔄</code>", quote=True)
+    i_m_sefg = await message.reply_text("<b>𝐏𝐫𝐨𝐜𝐞𝐬𝐬𝐢𝐧𝐠 . . . 🌚</b>", quote=True)
     rep_mess = message.reply_to_message
     is_file = False
     dl_url = ''
@@ -151,9 +151,9 @@ async def incoming_youtube_dl_f(client, message):
     current_user_id = message.from_user.id
     u_men = message.from_user.mention
     credit = await message.reply_text(
-        f"<b><i>🛃 Working For 🛃:</i></b> {u_men}", parse_mode="html"
+        f"<b>📌 𝙒𝙊𝙍𝙆𝙄𝙉𝙂 𝙁𝙊𝙍 ✅ </b> {u_men}", parse_mode="html" 🚀
     )
-    i_m_sefg = await message.reply_text("<code>Prrocessing...🔃</code>", quote=True)
+    i_m_sefg = await message.reply_text("<b>𝐏𝐫𝐨𝐜𝐞𝐬𝐬𝐢𝐧𝐠 . . . 🌚</b>", quote=True)
     # LOGGER.info(message)
     # extract link from message
     if message.reply_to_message:
