@@ -55,7 +55,7 @@ async def status_message_f(
 ):  # weird code but 'This is the way' @gautamajay52
     aria_i_p = await aria_start()
     # Show All Downloads
-    to_edit = await message.reply("<code>Processing . . . 🔄</code>")
+    to_edit = await message.reply("<b>Processing . . . 🚀</b>")
     chat_id = int(message.chat.id)
     mess_id = int(to_edit.message_id)
     async with _lock:
@@ -81,24 +81,24 @@ async def status_message_f(
             if file.status == "active":
                 is_file = file.seeder
                 if is_file is None:
-                    msgg = f"<b>🔁Conn:</b> <code>{file.connections}</code>"
+                    msgg = f"<b>🛰️ Connection : </b>{file.connections}</b>"
                 else:
-                    msgg = f"<b>🍱Seeds:</b> <code>{file.num_seeders}</code> | <b>🍒Peers:</b> <code>{file.connections}</code>"
+                    msgg = f"<b>📬 Seeds : {file.num_seeders} | 🍒Peers : {file.connections}</b>"
 
                 percentage = int(file.progress_string(0).split('%')[0])
                 prog = "[{0}{1}]".format("".join([FINISHED_PROGRESS_STR for i in range(math.floor(percentage / 5))]),"".join([UN_FINISHED_PROGRESS_STR for i in range(20 - math.floor(percentage / 5))]))
                 msg += f"<b>⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊</b>\n"
-                msg += f"\n<b>🔖Filename:</b> <code>{downloading_dir_name}</code>"
-                msg += f"\n<b>📡 Status</b>: <i>Downloading...📥</i>"
-                msg += f"\n<code>{prog}</code>"
-                msg += f"\n<b>🗃 Downloaded</b>: <code>{file.progress_string()}</code> <b>of</b> <code>{file.total_length_string()}</code>"
-                msg += f"\n<b>📊Speed</b>: <code>{file.download_speed_string()}</code>,"
-                msg += f"<b>🔍ETA:</b> <code>{file.eta_string()}</code>"  
+                msg += f"\n<b>📀 Filename : {downloading_dir_name}</b>"
+                msg += f"\n<u>⏳ Status : Downloading...📥</u>"
+                msg += f"\n<b>📊 Progress : {prog}</b>"
+                msg += f"\n<b>✅ Downloaded</b>: <code>{file.progress_string()}</code> <b>of</b> <code>{file.total_length_string()}</code>"
+                msg += f"\n<b>🚀 Speed : {file.download_speed_string()}</b>,"
+                msg += f"<b>🔍 ETA : {file.eta_string()}</b>"  
                 #umen = f'<a href="tg://user?id={file.message.from_user.id}">{file.message.from_user.first_name}</a>'
-                #msg += f"\n<b>👤User:</b> {umen} (<code>{file.message.from_user.id}</code>)"
-                #msg += f"\n<b>⚠️Warn:</b> <code>/warn {file.message.from_user.id}</code>"
+                #msg += f"\n<b>👤 User :</b> {umen} (<code>{file.message.from_user.id}</code>)"
+                #msg += f"\n<b>⚠️ Warn :</b> <code>/warn {file.message.from_user.id}</code>"
                 msg += f"\n{msgg}"
-                msg += f"\n<b>⛔ Cancel:</b> <code>/cancel {file.gid}</code>"
+                msg += f"\n<b>⛔ Cancel : /cancel {file.gid}</b>"
                 msg += "\n"
 
         hr, mi, se = up_time(time.time() - BOT_START_TIME)
