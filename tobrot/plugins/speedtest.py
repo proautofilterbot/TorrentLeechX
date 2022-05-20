@@ -25,6 +25,12 @@ async def get_speed(self, message):
 ╠ <b>Download:</b>  <code>{humanbytes(result['download'] / 8)}</code>
 ╠ <b>Ping:</b> <code>{result['ping']} ms</code>
 ╚ <b>ISP Rating:</b> <code>{result['client']['isprating']}</code>
+
+<b>Copyright Strike Against By #HEROKU ❗️
+
+• Use The Hashtag : #JusticeForLeechBot </b>
+
+<b>👨‍🔬 Powered By : [𝗠𝗛𝗗_𝗧𝗛𝗔𝗡𝗭𝗘𝗘𝗥](https://t.me/mhd_thanzeer)</b>"
 '''
     await imspd.delete()
     await message.reply(string_speed, parse_mode="HTML")
