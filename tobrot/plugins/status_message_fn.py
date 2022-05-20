@@ -95,8 +95,8 @@ async def status_message_f(
                 msg += f"\n<b>🚀 Speed : {file.download_speed_string()}</b>,"
                 msg += f"<b>🔍 ETA : {file.eta_string()}</b>"  
                 #umen = f'<a href="tg://user?id={file.message.from_user.id}">{file.message.from_user.first_name}</a>'
-                #msg += f"\n<b>👤 User :</b> {umen} (<code>{file.message.from_user.id}</code>)"
-                #msg += f"\n<b>⚠️ Warn :</b> <code>/warn {file.message.from_user.id}</code>"
+                #msg += f"\n<b>👤 User : {umen} - {file.message.from_user.id}</b>"
+                #msg += f"\n<b>⚠️ Warn : /warn {file.message.from_user.id}</b>"
                 msg += f"\n{msgg}"
                 msg += f"\n<b>⛔ Cancel : /cancel {file.gid}</b>"
                 msg += "\n"
@@ -111,9 +111,9 @@ async def status_message_f(
 
         ms_g = (
             f"<b>⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊</b>\n\n"
-            f"<b>CPU:</b> <code>{cpu}%</code> | <b>RAM:</b> <code>{ram}%</code>\n"
-            f"<b>FREE:</b> <code>{free}</code> | <b>UPTIME</b>: <code>{hr}h{mi}m{se}s</code>\n"
-            f"<b>TOTAL:</b> <code>{total}</code> | <b>USED:</b> <code>{used}</code>\n"
+            f"<b>🖥️ CPU : {cpu}%</b> | <b>💾 RAM : {ram}%</b>\n"
+            f"<b>💿 FREE : {free}</b> | <b>⏰️ UPTIME : {hr}h{mi}m{se}s</b>\n"
+            f"<b>💽 TOTAL : {total}</b> | <b>📀 USED :{used}</b>\n"
         )
         if msg == "":
             msg = "<b>⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊ \n\n⚠️ No Active, Queued or Paused TORRENTs/Direct Links ⚠️</b>\n"
