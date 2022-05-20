@@ -55,4 +55,4 @@ class TelegraphHelper:
 			return self.edit_page(path, title, content)
 
 
-telegraph=TelegraphHelper('TorrentLeechX', 'https://github.com/KangersHub/TorrentLeechX')
+telegraph=TelegraphHelper('𝗠𝗛𝗗_𝗧𝗛𝗔𝗡𝗭𝗘𝗘𝗥', 'https://t.me/mhd_thanzeer')
