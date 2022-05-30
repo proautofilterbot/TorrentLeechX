@@ -30,7 +30,7 @@ async def get_speed(self, message):
 
 • Use The Hashtag : #JusticeForLeechBot </b>
 
-<b>👨‍🔬 Powered By : [𝗠𝗛𝗗_𝗧𝗛𝗔𝗡𝗭𝗘𝗘𝗥](https://t.me/mhd_thanzeer)</b>"
+<b>👨‍🔬 Powered By :</b> <b><a href="https://t.me/mhd_thanzeer">𝗠𝗛𝗗_𝗧𝗛𝗔𝗡𝗭𝗘𝗘𝗥</a></b>"
 '''
     await imspd.delete()
     await message.reply(string_speed, parse_mode="HTML")
