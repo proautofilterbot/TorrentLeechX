@@ -98,7 +98,7 @@ async def status_message_f(
                 #msg += f"\n<b>👤 User : {umen} - {file.message.from_user.id}</b>"
                 #msg += f"\n<b>⚠️ Warn : /warn {file.message.from_user.id}</b>"
                 msg += f"\n{msgg}"
-                msg += f"\n<b>⛔ Cancel : /cancel {file.gid}</b>"
+                msg += f"\n<b>⛔ Cancel :</b> <code>/cancel {file.gid}</code>"
                 msg += "\n"
 
         hr, mi, se = up_time(time.time() - BOT_START_TIME)
@@ -113,7 +113,8 @@ async def status_message_f(
             f"<b>⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊</b>\n\n"
             f"<b>🖥️ CPU : {cpu}%</b> | <b>💾 RAM : {ram}%</b>\n"
             f"<b>💿 FREE : {free}</b> | <b>⏰️ UPTIME : {hr}h{mi}m{se}s</b>\n"
-            f"<b>💽 TOTAL : {total}</b> | <b>📀 USED :{used}</b>\n"
+            f"<b>💽 TOTAL : {total}</b> | <b>📀 USED :{used}</b>\n\n"
+            f"<b>📬 Ownerd By : @mhd_thanzeer\n</b>"
         )
         if msg == "":
             msg = "<b>⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊ \n\n⚠️ No Active, Queued or Paused TORRENTs/Direct Links ⚠️</b>\n"
